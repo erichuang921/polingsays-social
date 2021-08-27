@@ -13,11 +13,22 @@
 		<h1>請輸入文章 ID 編號</h1>
 		<div class="userInput">
 			<style>input:focus, input-searchicon:focus, textarea:focus{outline: none}</style>
-			<input type="tel" id='ist' style="border:2px #08c4cc solid" maxlength="1" onkeyup="clickEvent(this,'sec')">
-			<input type="tel" id="sec" style="border:2px #08c4cc solid" maxlength="1" onkeyup="clickEvent(this,'third')">
-			<input type="tel" id="third" style="border:2px #08c4cc solid" maxlength="1" onkeyup="clickEvent(this,'fourth')">
-			<input type="tel" id="fourth" style="border:2px #08c4cc solid" maxlength="1" onkeyup="clickEvent(this,'fifth')">
-			<input type="tel" id="fifth" style="border:2px #08c4cc solid" maxlength="1">
+			<style>
+				input::-webkit-outer-spin-button,
+				input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+				}
+			/* Firefox */
+			input[type=number] {
+  			-moz-appearance: textfield;
+			}			
+			</style>
+			<input type="number" id='ist' style="border:2px #08c4cc solid" maxlength="1" onkeyup="clickEvent(this,'sec')">
+			<input type="number" id="sec" style="border:2px #08c4cc solid" maxlength="1" onkeyup="clickEvent(this,'third')">
+			<input type="number" id="third" style="border:2px #08c4cc solid" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+			<input type="number" id="fourth" style="border:2px #08c4cc solid" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+			<input type="number" id="fifth" style="border:2px #08c4cc solid" maxlength="1">
 		</div>
 		<button style="color:#ffffff" OnClick="buttonClick()">前往文章</button>
 	</div>
